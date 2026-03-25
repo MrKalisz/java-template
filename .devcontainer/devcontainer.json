@@ -3,16 +3,7 @@
   "features": {},
   "customizations": {
     "vscode": {
-      "extensions": [
-        "-github.copilot-chat"
-      ],
-      "settings": {
-        "github.copilot.enable": { "*": false },
-        "github.chat.agent.enabled": false,
-        "github.copilot.chat.agent.autoFix": false,
-        "github.copilot.inlineSuggest.enable": false,
-        "chat.commandCenter.enabled": false,
-      }
+      "extensions": ["-github.copilot-chat"]
     }
   }
 }
