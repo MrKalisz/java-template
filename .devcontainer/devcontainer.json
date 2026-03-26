@@ -1,14 +1,16 @@
 {
-  "name": "My Java Codespace",
-  "image": "mcr.microsoft.com/devcontainers/java:17",
-
   "customizations": {
     "vscode": {
       "extensions": [
         "vscjava.vscode-java-pack"
-      ]
+      ],
+      "settings": {
+        "github.copilot.enable": {
+          "*": false
+        }
+      }
     }
   },
 
-  "postCreateCommand": "code --uninstall-extension GitHub.copilot; code --uninstall-extension GitHub.copilot-chat"
+  "postStartCommand": "code --uninstall-extension GitHub.copilot --force 2>/dev/null || true; code --uninstall-extension GitHub.copilot-chat --force 2>/dev/null || true"
 }
