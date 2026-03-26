@@ -1,13 +1,19 @@
 {
+  "name": "My Java Codespace",
+  "image": "mcr.microsoft.com/devcontainers/java:17",
+
   "customizations": {
     "vscode": {
       "extensions": [
-        "vscjava.vscode-java-pack"
+        "redhat.java",
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test"
       ],
       "settings": {
-        "github.copilot.enable": {
-          "*": false
-        }
+        "chat.commandCenter.enabled": false,
+        "github.copilot.chat.welcomeMessage": "never",
+        "workbench.secondarySideBar.visible": false,
+        "github.copilot.enable": { "*": false }
       }
     }
   },
